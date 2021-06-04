@@ -1,0 +1,13 @@
+This code contains the data sets used by NetworkSIR/EnvironmentalSIR, specified
+as adjacency lists. The files themselves include some metadata at the top, in the form of:
+
+N = <#nodes>
+Infect Nodes <IDs of the nodes to infect, or -1 if they should be chosen randomly. (adjust INFECT_X_NODES in NetworkSIR/EnvironmentalSIR's Runner.java) as needed>
+Recovered nodes <IDs of the nodes to initialize as being recovered, or -1 if there are none.>
+Environment nodes <IDs of the nodes to infect, or -1 if they should be chosen randomly. (adjust ENV_X_NODES in NetworkSIR/EnvironmentalSIR's Runner.java) as needed>
+
+The rest of the lines are of the form:
+<nodeID>: <nodeID to have a directed edge to> <nodeID to have a directed edge to> ... (etc)
+	
+Please note that these lists were generated using code written by @author Madison Pickering.
+(Copyright 2020 Madison Pickering)
